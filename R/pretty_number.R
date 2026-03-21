@@ -6,6 +6,7 @@
 #'
 #' @return A character string.
 #' @export
+#'
 pretty_number <- function(x) {
   format(x, scientific = FALSE, big.mark = ",")
 }

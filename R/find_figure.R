@@ -1,6 +1,6 @@
 #' Find a figure in a table (SQL-style)
 #'
-#' This helper extracts a single value from a table using
+#' This function extracts a single value from a table using
 #' SQL-like argument names: `from`, `where`, `is`, `select`.
 #'
 #' @param from A data frame.
@@ -10,13 +10,16 @@
 #'
 #' @return A single value extracted from the table.
 #' @examples
-#' # SQL‑style extraction:
 #' find_figure(
-#'   from   = `Table 3 name of the table`,
-#'   where  = "Period",
-#'   is     = "September 2025",
-#'   select = "Payment
+#'   from   = `Name of the table`,
+#'   where  = "Month",
+#'   is     = "September 2020",
+#'   select = "Applications"
 #' )
+#'
+#' @export
+
+
 
 
 find_figure <- function(from, where, is, select) {

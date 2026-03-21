@@ -23,6 +23,11 @@ This helper extracts a single value from a table using
 SQL-like argument names: `from`, `where`, `is`, `select`.
 }
 \examples{
-# find_figure(df, "Month", "September 2020", "Applications")
+find_figure(
+  from   = df,
+  where  = "Month",
+  is     = "September 2020",
+  select = "Applications"
+)
 
 }

@@ -11,6 +11,7 @@
 #' magic_word(69300000, 70000000)  # "almost"
 #'
 #' @export
+#'
 magic_word <- function(actual, rounded) {
   if (rounded > actual) {
     "almost"

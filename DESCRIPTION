@@ -1,17 +1,29 @@
 Package: reportmagic
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools for Narrative-Friendly Reporting
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      given = "Inma",
+      family = "Ruiz",
+      email = "roseneath12@outlook.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Tools for generating clear, human-readable narrative reporting from
+    tabular data. The package provides small helper functions that make it easy
+    to extract numeric values, format them consistently, and describe them in
+    natural language. 
+    - 'find_figure()' retrieves a single numeric value from a data frame based on
+      a specified condition, ensuring clean and predictable extraction for use in
+      reports.
+    - 'magic_word()' compares an actual value with a rounded value and returns a
+      narrative cue such as "over" or "almost" to support natural phrasing in
+      analytical text.
+    - 'pretty_number()' formats numbers for publication by applying rounding,
+      fixed decimal places, and removing scientific notation.
+    Together, these helpers support reproducible, expressive reporting workflows.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
