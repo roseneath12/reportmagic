@@ -9,15 +9,26 @@ output: github_document
 <!-- badges: end -->
 
 The **reportmagic** package provides small, expressive helper functions that make
-it easier to write clear, human‑readable analytical reports. It focuses on three
-core tasks that appear in almost every publication workflow:
+it easier to write clear, human‑readable analytical reports. It focuses on three core tasks that frequently appear in everyday data communication:
 
 - extracting a single numeric value from a dataset,
 - describing numbers in natural language,
 - formatting numbers cleanly for publication.
 
 These helpers are designed to be simple, predictable, and easy to combine inside
-larger reporting pipelines.
+.Rmd and .qmd reports.
+
+## Why this package exists
+
+I created **reportmagic** with two intentions.
+
+First, I wanted to learn how to build an R package completely from scratch:
+structure, documentation, testing, GitHub workflows, everything. This project
+became a practical way to understand the full lifecycle of package development.
+
+Second, I wanted a home for the small helper functions I use in automated Quarto reports. Packaging them together makes it easier to reuse them across projects
+and to refine them over time.
+
 
 ## Installation
 
