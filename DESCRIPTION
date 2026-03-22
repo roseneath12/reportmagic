@@ -26,6 +26,7 @@ Description: Tools for generating clear, human-readable narrative reporting from
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Suggests: 
     testthat (>= 3.0.0)

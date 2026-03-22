@@ -11,7 +11,7 @@ find_figure(from, where, is, select)
 
 \item{where}{A column name to filter on (string).}
 
-\item{is}{The value to match in the `where` column.}
+\item{is}{The value to match in the \code{where} column.}
 
 \item{select}{The column to pull from the filtered row.}
 }
@@ -19,12 +19,12 @@ find_figure(from, where, is, select)
 A single value extracted from the table.
 }
 \description{
-This helper extracts a single value from a table using
-SQL-like argument names: `from`, `where`, `is`, `select`.
+This function extracts a single value from a table using
+SQL-like argument names: \code{from}, \code{where}, \code{is}, \code{select}.
 }
 \examples{
 find_figure(
-  from   = df,
+  from   = `Name of the table`,
   where  = "Month",
   is     = "September 2020",
   select = "Applications"
