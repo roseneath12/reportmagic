@@ -11,7 +11,6 @@
 #' magic_word(69300000, 70000000)  # "almost"
 #'
 #' @export
-#'
 magic_word <- function(actual, rounded) {
   if (rounded > actual) {
     "almost"
@@ -21,3 +20,27 @@ magic_word <- function(actual, rounded) {
     ""
   }
 }
+----------------
+
+#' Choose "Almost" or "Over" based on rounding direction
+#'
+#' Works like `magic_word()` but returns the capitalised versions.
+#'
+#' @param actual The true numeric value.
+#' @param rounded The rounded numeric value.
+#'
+#' @return "Almost", "Over", or "".
+#' @examples
+#' magic_Word(69300000, 70000000)  # "Almost"
+#'
+#' @export
+magic_Word <- function(actual, rounded) {
+  if (rounded > actual) {
+    "Almost"
+  } else if (rounded < actual) {
+    "Over"
+  } else {
+    ""
+  }
+}
+

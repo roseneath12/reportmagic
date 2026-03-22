@@ -18,10 +18,6 @@
 #' )
 #'
 #' @export
-
-
-
-
 find_figure <- function(from, where, is, select) {
 
   # check columns exist
