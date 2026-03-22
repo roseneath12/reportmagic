@@ -13,5 +13,14 @@ pretty_number(x)
 A character string.
 }
 \description{
-Ensures clean, publication-ready formatting.
+Ensures clean, publication-ready formatting by suppressing scientific
+notation and applying standard thousands separators.
+}
+\examples{
+payment_figure <- 69300000
+
+# Format a large figure for publication
+pretty_number(payment_figure)
+# "69,300,000"
+
 }
