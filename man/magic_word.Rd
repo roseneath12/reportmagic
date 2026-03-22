@@ -4,21 +4,40 @@
 \alias{magic_word}
 \title{Choose "almost" or "over" based on rounding direction}
 \usage{
-magic_word(actual, rounded)
+magic_word(actual, rounded, capitalized = FALSE)
 }
 \arguments{
 \item{actual}{The true numeric value.}
 
 \item{rounded}{The rounded numeric value.}
+
+\item{capitalized}{Logical. Should the returned word be capitalised?
+Defaults to FALSE.}
 }
 \value{
-"almost", "over", or "".
+A character string: "almost", "over", "Almost", "Over", or "".
 }
 \description{
-Compares an actual value with a rounded value and returns
-a natural-language word describing the relationship.
+Compares an actual value with a rounded value and returns a natural-language
+word describing the relationship. Optionally returns the capitalised form.
 }
 \examples{
-magic_word(69300000, 70000000)  # "almost"
+payment_figure_actual  <- 69300000
+payment_figure_rounded <- 70000000
+
+magic_word(payment_figure_actual, payment_figure_rounded)
+# "almost"
+
+magic_word(payment_figure_actual, payment_figure_rounded, capitalized = TRUE)
+# "Almost"
+
+payment_figure_actual  <- 70000000
+payment_figure_rounded <- 69000000
+
+magic_word(payment_figure_actual, payment_figure_rounded)
+# "over"
+
+magic_word(payment_figure_actual, payment_figure_rounded, capitalized = TRUE)
+# "Over"
 
 }
